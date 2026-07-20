@@ -1,0 +1,9 @@
+stages: [build, test, package]
+
+build:
+  stage: build
+  script: ./gradlew assemble && npm --prefix web ci && npm --prefix web run build
+
+test:
+  stage: test
+  script: ./gradlew test

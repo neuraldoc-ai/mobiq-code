@@ -1,0 +1,14 @@
+{
+  "kv.lieferung.titel": "Lieferung",
+  "kv.lieferung.wunschtermin": "Wunschtermin",
+  "kv.lieferung.adresse": "Lieferadresse",
+  "kv.lieferung.etage": "Etage / Aufzug",
+  "kv.lieferung.liefersperre": "Liefersperre",
+  "kv.lieferung.montage": "Montage",
+  "tour.offen": "Offene Lieferungen",
+  "tour.volumen": "Volumen",
+  "kasse.gutschein": "Gutschein",
+  "stamm.fahrzeug.kennzeichen": "Kennzeichen",
+  "stamm.fahrzeug.zuladung": "Zuladung (kg)",
+  "stamm.fahrzeug.filiale": "Filiale"
+}

@@ -1,0 +1,11 @@
+# Parameter Übergabe an die Finanzbuchhaltung
+FIBU_KONTO_ANZAHLUNG:
+  typ: konto
+  standard: "1718"
+  beschreibung: Konto für erhaltene Anzahlungen (SKR03)
+FIBU_EXPORT_ZEIT:
+  typ: zeit
+  standard: "02:00"
+  min: "00:00"
+  max: "05:00"
+  beschreibung: Uhrzeit der nächtlichen Übergabe

@@ -1,0 +1,29 @@
+# Parameter Auftrag und Lieferung. Je Mandant unter Administration > Parameter überschreibbar.
+LIEF_VORLAUF_TAGE:
+  typ: int
+  standard: 3
+  min: 0
+  max: 14
+  einheit: Tage
+  beschreibung: Vorlauf zwischen Wareneingang und frühestem Liefertermin
+LIEF_AVIS_STUNDEN:
+  typ: int
+  standard: 48
+  min: 12
+  max: 96
+  einheit: Stunden
+  beschreibung: Avisierung an den Kunden vor der Lieferung
+ANZ_MIN_PROZ:
+  typ: int
+  standard: 20
+  min: 0
+  max: 100
+  einheit: Prozent
+  beschreibung: Mindestanzahlung bei Vertragsabschluss
+MONT_ZEIT_PUFFER:
+  typ: int
+  standard: 30
+  min: 0
+  max: 120
+  einheit: Minuten
+  beschreibung: Zeitpuffer je Montage

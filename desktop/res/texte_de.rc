@@ -1,0 +1,10 @@
+STRINGTABLE
+BEGIN
+  1201, "Wunschtermin"
+  1202, "Lieferadresse"
+  1203, "Liefersperre"
+  1204, "Montage"
+  1301, "Kennzeichen"
+  1302, "Zuladung (kg)"
+  1303, "Filiale"
+END

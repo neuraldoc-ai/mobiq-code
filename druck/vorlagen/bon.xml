@@ -1,0 +1,6 @@
+<bon>
+  <kopf filiale="{filiale}" kasse="{kasse}" datum="{datum}"/>
+  <positionen/>
+  <zahlungen/>
+  <fuss text="Vielen Dank für Ihren Einkauf"/>
+</bon>

@@ -1,0 +1,14 @@
+# Parameter Tourenplanung
+TOUR_MAX_STOPPS:
+  typ: int
+  standard: 12
+  min: 1
+  max: 30
+  einheit: Stopps
+  beschreibung: Höchstzahl Stopps je Tour
+TOUR_START_ZEIT:
+  typ: zeit
+  standard: "07:00"
+  min: "05:00"
+  max: "10:00"
+  beschreibung: Frühester Tourstart
