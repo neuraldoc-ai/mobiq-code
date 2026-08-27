@@ -6,15 +6,12 @@ import java.math.BigDecimal;
 public class GutscheinService {
 
     /**
-     * Löst einen Gutschein ein. Ein Gutschein wird immer vollständig eingelöst;
-     * ist der Bon günstiger, wird der Rest als neuer Gutschein ausgegeben.
+     * Löst einen Gutschein ganz oder teilweise ein. Ein Restguthaben bleibt auf demselben
+     * Gutschein und kann später eingelöst werden.
      */
     public Einloesung einloesen(Gutschein g, BigDecimal bonBetrag) {
-        BigDecimal rest = g.wert().subtract(bonBetrag);
-        g.entwerten();
-        if (rest.signum() > 0) {
-            return Einloesung.mitNeuemGutschein(g.wert(), Gutschein.neu(rest));
-        }
-        return Einloesung.voll(g.wert());
+        BigDecimal eingeloest = g.restwert().min(bonBetrag);
+        g.belasten(eingeloest);
+        return Einloesung.teilweise(eingeloest, g.restwert());
     }
 }
