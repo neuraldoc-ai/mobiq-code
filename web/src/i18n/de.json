@@ -10,6 +10,7 @@
   "kasse.gutschein": "Gutschein",
   "kasse.restguthaben": "Restguthaben",
   "stamm.fahrzeug.kennzeichen": "Kennzeichen",
+  "stamm.fahrzeug.ladevolumen": "Ladevolumen (m³)",
   "stamm.fahrzeug.zuladung": "Zuladung (kg)",
   "stamm.fahrzeug.filiale": "Filiale"
 }

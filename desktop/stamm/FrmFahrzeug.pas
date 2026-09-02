@@ -8,6 +8,7 @@ uses
 type
   TFrmFahrzeug = class(TForm)
     edtKennzeichen: TEdit;
+    edtLadevolumen: TEdit;
     edtZuladung: TEdit;
     cbxFiliale: TComboBox;
   end;

@@ -7,4 +7,5 @@ BEGIN
   1301, "Kennzeichen"
   1302, "Zuladung (kg)"
   1303, "Filiale"
+  1304, "Ladevolumen (m³)"
 END
