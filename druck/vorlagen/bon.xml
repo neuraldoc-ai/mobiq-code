@@ -2,5 +2,6 @@
   <kopf filiale="{filiale}" kasse="{kasse}" datum="{datum}"/>
   <positionen/>
   <zahlungen/>
+  <gutschein wenn="{gutschein.restwert} > 0" text="Restguthaben Gutschein {gutschein.nr}: {gutschein.restwert}"/>
   <fuss text="Vielen Dank für Ihren Einkauf"/>
 </bon>
