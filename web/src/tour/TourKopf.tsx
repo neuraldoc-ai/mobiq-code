@@ -6,7 +6,9 @@ export function TourKopf({ tour }: { tour: Tour }) {
   return (
     <header className='tour-kopf'>
       <h2>{tour.name}</h2>
-      <span>{t('tour.volumen')}: {volumen.toFixed(1)} m³</span>
+      <span className={volumen > tour.fahrzeug.ladevolumenM3 ? 'ueberladen' : undefined}>
+        {t('tour.volumen')}: {volumen.toFixed(1)} / {tour.fahrzeug.ladevolumenM3} m³
+      </span>
     </header>
   )
 }

@@ -8,6 +8,9 @@ export function FahrzeugMaske({ fz, onChange }: { fz: Fahrzeug; onChange: (fz: F
       <Field label={t('stamm.fahrzeug.kennzeichen')} required>
         <Text value={fz.kennzeichen} onChange={(kennzeichen) => onChange({ ...fz, kennzeichen })} />
       </Field>
+      <Field label={t('stamm.fahrzeug.ladevolumen')} required>
+        <Zahl value={fz.ladevolumenM3} einheit='m³' onChange={(ladevolumenM3) => onChange({ ...fz, ladevolumenM3 })} />
+      </Field>
       <Field label={t('stamm.fahrzeug.zuladung')}>
         <Zahl value={fz.zuladungKg} onChange={(zuladungKg) => onChange({ ...fz, zuladungKg })} />
       </Field>

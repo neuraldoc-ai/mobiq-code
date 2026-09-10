@@ -12,3 +12,14 @@ TOUR_START_ZEIT:
   min: "05:00"
   max: "10:00"
   beschreibung: Frühester Tourstart
+TOUR_MAX_LADEVOLUMEN_M3:
+  typ: int
+  standard: 38
+  min: 5
+  max: 60
+  einheit: m³
+  beschreibung: Ladevolumen für neu angelegte Fahrzeuge
+TOUR_UEBERLADUNG_ERLAUBT:
+  typ: bool
+  standard: true
+  beschreibung: Tour trotz Überladung speichern (mit Bestätigung)
