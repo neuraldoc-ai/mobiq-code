@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2">
+  <hashTree><!-- 500 Bons je Filiale, 30 Filialen --></hashTree>
+</jmeterTestPlan>
