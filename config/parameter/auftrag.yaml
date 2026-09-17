@@ -33,8 +33,15 @@ TEILLIEF_ERLAUBT:
   beschreibung: Teillieferungen im Mandanten erlauben
 TEILLIEF_MAX_ANZAHL:
   typ: int
-  standard: 2
-  min: 1
-  max: 10
+  standard: 3
+  min: 2
+  max: 5
   einheit: Teile
   beschreibung: Höchstzahl Lieferteile je Kaufvertrag
+TEILLIEF_MIN_WARENWERT_PROZ:
+  typ: int
+  standard: 20
+  min: 10
+  max: 90
+  einheit: Prozent
+  beschreibung: Mindestanteil am Warenwert je Lieferteil
