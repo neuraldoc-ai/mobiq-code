@@ -1,0 +1,4 @@
+<h1>Rechnung {{beleg.nr}}</h1>
+<p>Kaufvertrag {{kv.nr}} vom {{kv.datum}}</p>
+{{#positionen}}<tr><td>{{text}}</td><td>{{betrag}}</td></tr>{{/positionen}}
+<p>Abzüglich Anzahlung: {{beleg.anzahlungVerrechnet}}</p>
