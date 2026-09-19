@@ -8,7 +8,7 @@ LIEF_VORLAUF_TAGE:
   beschreibung: Vorlauf zwischen Wareneingang und frühestem Liefertermin
 LIEF_AVIS_STUNDEN:
   typ: int
-  standard: 48
+  standard: 24
   min: 12
   max: 96
   einheit: Stunden
