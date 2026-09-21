@@ -7,3 +7,7 @@ build:
 test:
   stage: test
   script: ./gradlew test
+
+test-kasse:
+  stage: test
+  script: ./gradlew :server:test --tests 'de.musterhaus.mobiq.kasse.*'
