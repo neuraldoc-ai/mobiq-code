@@ -4,7 +4,8 @@ package de.musterhaus.mobiq.faktura;
 public enum Belegart {
     RE("Rechnung"),
     GS("Gutschrift"),
-    AZ("Anzahlung");
+    AZ("Anzahlung"),
+    TR("Teilrechnung");
 
     private final String text;
 

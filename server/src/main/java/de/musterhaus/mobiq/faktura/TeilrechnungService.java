@@ -9,7 +9,7 @@ public class TeilrechnungService {
     private final AnzahlungVerrechnung verrechnung = new AnzahlungVerrechnung();
 
     public Rechnung teilrechnung(Kaufvertrag kv, Lieferteil teil, boolean letzterTeil) {
-        Rechnung r = Rechnung.neu(Belegart.RE, kv);
+        Rechnung r = Rechnung.neu(Belegart.TR, kv);
         r.setPositionen(teil.positionen());
         r.setTeilNr(teil.teilNr());
         r.setAnzahlungVerrechnet(verrechnung.anteilig(kv, teil));
