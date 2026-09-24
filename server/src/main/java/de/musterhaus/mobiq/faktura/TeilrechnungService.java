@@ -12,7 +12,9 @@ public class TeilrechnungService {
         Rechnung r = Rechnung.neu(Belegart.TR, kv);
         r.setPositionen(teil.positionen());
         r.setTeilNr(teil.teilNr());
-        r.setAnzahlungVerrechnet(verrechnung.anteilig(kv, teil));
+        r.setAnzahlungVerrechnet(letzterTeil
+                ? verrechnung.rest(kv, Rechnungen.verrechneteAnzahlung(kv))
+                : verrechnung.anteilig(kv, teil));
         return r;
     }
 }

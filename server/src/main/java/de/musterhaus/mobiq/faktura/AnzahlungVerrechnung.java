@@ -14,6 +14,11 @@ public class AnzahlungVerrechnung {
         return kv.anzahlung();
     }
 
+    /** Teillieferung, letzter Teil: verrechnet den Rest der Anzahlung, damit keine Rundungsdifferenz bleibt. */
+    public BigDecimal rest(Kaufvertrag kv, BigDecimal bereitsVerrechnet) {
+        return kv.anzahlung().subtract(bereitsVerrechnet);
+    }
+
     /** Teillieferung: Anzahlung anteilig nach Warenwert des Lieferteils. */
     public BigDecimal anteilig(Kaufvertrag kv, Lieferteil teil) {
         BigDecimal anteil = teil.positionen().stream().map(KvPosition::betrag).reduce(BigDecimal.ZERO, BigDecimal::add)
