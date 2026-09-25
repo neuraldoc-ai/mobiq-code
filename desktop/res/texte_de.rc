@@ -2,7 +2,7 @@ STRINGTABLE
 BEGIN
   1201, "Wunschtermin"
   1202, "Lieferadresse"
-  1203, "Liefersperre"
+  1203, "Lieferstopp"
   1204, "Montage"
   1301, "Kennzeichen"
   1302, "Zuladung (kg)"
