@@ -14,6 +14,9 @@ public class Tagesabschluss {
 
     public Abschluss erstelle(String filiale, LocalDate tag) {
         List<Kassenbeleg> liste = belege.findeTag(filiale, tag);
+        if (liste.isEmpty()) {
+            return Abschluss.leer(filiale, tag);
+        }
         return Abschluss.aus(filiale, tag, liste.get(0).kassenNr(), liste);
     }
 }
