@@ -13,7 +13,7 @@ export function LieferungAufteilen({ kv }: { kv: Kaufvertrag }) {
         <fieldset key={teil.nr}>
           <legend>{t('kv.aufteilen.teil')} {teil.nr}</legend>
           <DragListe<KvPosition> items={teil.positionen} gruppe='positionen' onDrop={(p) => a.verschiebe(p, teil.nr)} />
-          <Field label={t('kv.aufteilen.warenwert')}>{teil.anteilProzent} %</Field>
+          <Field label={t('kv.aufteilen.warenwert')} hinweis={t('kv.aufteilen.warenwert.hinweis')}>{teil.anteilProzent} %</Field>
           <Field label={t('kv.lieferung.wunschtermin')} required>
             <KwAuswahl value={teil.wunschKw} onChange={(kw) => a.setzeTermin(teil.nr, kw)} />
           </Field>
