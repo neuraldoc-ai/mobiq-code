@@ -5,6 +5,8 @@
   "kv.lieferung.etage": "Etage / Aufzug",
   "kv.lieferung.liefersperre": "Lieferstopp",
   "kv.lieferung.montage": "Montage",
+  "kv.lieferung.teillieferung": "Teillieferung erlaubt",
+  "kv.lieferung.aufteilen": "Lieferung aufteilen",
   "tour.offen": "Offene Lieferungen",
   "tour.volumen": "Volumen",
   "kasse.gutschein": "Gutschein",

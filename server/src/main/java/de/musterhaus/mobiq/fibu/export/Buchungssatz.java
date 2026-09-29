@@ -9,5 +9,7 @@ public record Buchungssatz(
         String belegnr,
         String kvNr,
         BigDecimal betragBrutto,
-        short steuerschluessel) {
+        short steuerschluessel,
+        Short teillieferungNr,
+        BigDecimal azVerrechnet) {
 }

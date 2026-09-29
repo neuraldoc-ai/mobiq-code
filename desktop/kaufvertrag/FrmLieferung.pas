@@ -12,6 +12,8 @@ type
     cbxEtage: TComboBox;
     chkLiefersperre: TCheckBox;
     chkMontage: TCheckBox;
+    chkTeillieferung: TCheckBox;
+    btnAufteilen: TButton;
     procedure FormShow(Sender: TObject);
   private
     FKv: TKaufvertrag;

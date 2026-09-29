@@ -27,3 +27,21 @@ MONT_ZEIT_PUFFER:
   max: 120
   einheit: Minuten
   beschreibung: Zeitpuffer je Montage
+TEILLIEF_ERLAUBT:
+  typ: bool
+  standard: false
+  beschreibung: Teillieferungen im Mandanten erlauben
+TEILLIEF_MAX_ANZAHL:
+  typ: int
+  standard: 3
+  min: 2
+  max: 5
+  einheit: Teile
+  beschreibung: Höchstzahl Lieferteile je Kaufvertrag
+TEILLIEF_MIN_WARENWERT_PROZ:
+  typ: int
+  standard: 20
+  min: 10
+  max: 90
+  einheit: Prozent
+  beschreibung: Mindestanteil am Warenwert je Lieferteil

@@ -9,3 +9,7 @@ FIBU_EXPORT_ZEIT:
   min: "00:00"
   max: "05:00"
   beschreibung: Uhrzeit der nächtlichen Übergabe
+FIBU_BELEGART_TEILRECHNUNG:
+  typ: text
+  standard: "TR"
+  beschreibung: Belegart für Teilrechnungen im Export

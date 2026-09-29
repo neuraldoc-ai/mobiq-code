@@ -1,8 +1,11 @@
-import { AdressFeld, Auswahl, Checkbox, Field, KwAuswahl } from '@mobiq/ui'
+import { AdressFeld, Auswahl, Button, Checkbox, Field, KwAuswahl } from '@mobiq/ui'
+import { useParameter } from '../api/parameter'
+import { oeffneAufteilen } from './LieferungAufteilen'
 import type { Kaufvertrag } from '../api/types'
 import { t } from '../i18n'
 
 export function RegisterLieferung({ kv, onChange }: { kv: Kaufvertrag; onChange: (kv: Kaufvertrag) => void }) {
+  const param = useParameter()
   return (
     <section aria-label={t('kv.lieferung.titel')}>
       <Field label={t('kv.lieferung.wunschtermin')} required>
@@ -16,6 +19,12 @@ export function RegisterLieferung({ kv, onChange }: { kv: Kaufvertrag; onChange:
       </Field>
       <Checkbox label={t('kv.lieferung.liefersperre')} checked={kv.liefersperre} onChange={(liefersperre) => onChange({ ...kv, liefersperre })} />
       <Checkbox label={t('kv.lieferung.montage')} checked={kv.montage} onChange={(montage) => onChange({ ...kv, montage })} />
+      {param.TEILLIEF_ERLAUBT && !kv.finanzkauf && (
+        <>
+          <Checkbox label={t('kv.lieferung.teillieferung')} checked={kv.teillieferungErlaubt} onChange={(teillieferungErlaubt) => onChange({ ...kv, teillieferungErlaubt })} />
+          <Button disabled={!kv.teillieferungErlaubt} onClick={() => oeffneAufteilen(kv)}>{t('kv.lieferung.aufteilen')}</Button>
+        </>
+      )}
     </section>
   )
 }
