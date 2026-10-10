@@ -22,7 +22,7 @@ public class Kaufvertrag {
 
     /** Lieferbereit, wenn alle Positionen im Lager sind und keine Liefersperre gesetzt ist. */
     public boolean istLieferbereit() {
-        return !liefersperre && positionen.stream().allMatch(KvPosition::imLager);
+        return !liefersperre && anzahlung.signum() > 0 && positionen.stream().allMatch(KvPosition::imLager);
     }
 
     public BigDecimal warenwert() {
