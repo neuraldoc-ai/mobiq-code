@@ -2,7 +2,6 @@ package de.musterhaus.mobiq.druck;
 
 import java.util.Map;
 
-/** Druckausgabe über HTML-Vorlagen mit Platzhaltern {{feld}}. Ersetzt LegacyDruck. */
 public class VorlagenEngine {
 
     private final VorlagenQuelle quelle;

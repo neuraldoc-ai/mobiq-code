@@ -1,4 +1,3 @@
-# Parameter Tourenplanung
 TOUR_MAX_STOPPS:
   typ: int
   standard: 12

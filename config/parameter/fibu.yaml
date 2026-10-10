@@ -1,4 +1,3 @@
-# Parameter Übergabe an die Finanzbuchhaltung
 FIBU_KONTO_ANZAHLUNG:
   typ: konto
   standard: "1718"

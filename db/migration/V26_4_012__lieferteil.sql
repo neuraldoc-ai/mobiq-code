@@ -1,4 +1,3 @@
--- Teillieferung (MOB-4812)
 CREATE TABLE lieferteil (
   lt_id        bigserial PRIMARY KEY,
   kv_id        bigint    NOT NULL REFERENCES kaufvertrag (kv_id),

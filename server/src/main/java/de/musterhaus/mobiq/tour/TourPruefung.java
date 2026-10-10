@@ -2,7 +2,6 @@ package de.musterhaus.mobiq.tour;
 
 import de.musterhaus.mobiq.param.Parameter;
 
-/** Prüft eine Tour vor dem Speichern. */
 public class TourPruefung {
 
     private final Parameter param;

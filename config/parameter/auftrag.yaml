@@ -1,4 +1,3 @@
-# Parameter Auftrag und Lieferung. Je Mandant unter Administration > Parameter überschreibbar.
 LIEF_VORLAUF_TAGE:
   typ: int
   standard: 3

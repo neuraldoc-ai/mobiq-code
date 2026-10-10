@@ -2,7 +2,6 @@ package de.musterhaus.mobiq.auftrag;
 
 import java.math.BigDecimal;
 
-/** Position eines Kaufvertrags. */
 public record KvPosition(
         String artikelNr,
         String text,

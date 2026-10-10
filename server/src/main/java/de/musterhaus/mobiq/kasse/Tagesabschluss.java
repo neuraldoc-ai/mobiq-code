@@ -3,7 +3,6 @@ package de.musterhaus.mobiq.kasse;
 import java.time.LocalDate;
 import java.util.List;
 
-/** Tagesabschluss je Filiale: liest alle Kassenbelege des Tages. */
 public class Tagesabschluss {
 
     private final KassenbelegRepository belege;

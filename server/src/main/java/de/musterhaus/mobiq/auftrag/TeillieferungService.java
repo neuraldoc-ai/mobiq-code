@@ -4,7 +4,6 @@ import de.musterhaus.mobiq.param.Parameter;
 import java.math.BigDecimal;
 import java.util.List;
 
-/** Teilt einen Kaufvertrag in Lieferteile auf. */
 public class TeillieferungService {
 
     private final Parameter param;
@@ -18,7 +17,7 @@ public class TeillieferungService {
             throw new FachlicherFehler("Teillieferung ist im Mandanten nicht erlaubt");
         }
         if (kv.finanzkauf()) {
-            // Mit der Partnerbank noch nicht geklärt, siehe MOB-4808
+
             throw new FachlicherFehler("Teillieferung ist bei Finanzkauf nicht möglich");
         }
         if (teile.size() > param.getInt("TEILLIEF_MAX_ANZAHL")) {

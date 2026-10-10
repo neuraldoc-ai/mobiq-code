@@ -25,6 +25,6 @@ export function LieferungAufteilen({ kv }: { kv: Kaufvertrag }) {
 }
 
 export function oeffneAufteilen(kv: Kaufvertrag) {
-  if (kv.finanzkauf) return // Teillieferung bei Finanzkauf gesperrt, siehe MOB-4812
+  if (kv.finanzkauf) return
   Dialog.oeffne(<LieferungAufteilen kv={kv} />)
 }

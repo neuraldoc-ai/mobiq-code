@@ -4,7 +4,6 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-/** Kopf eines Kaufvertrags. Ein Kaufvertrag wird in einer Lieferung ausgeliefert. */
 public class Kaufvertrag {
 
     private final String kvNr;
@@ -20,7 +19,6 @@ public class Kaufvertrag {
         this.kundeNr = kundeNr;
     }
 
-    /** Lieferbereit, wenn alle Positionen im Lager sind und keine Liefersperre gesetzt ist. */
     public boolean istLieferbereit() {
         return !liefersperre && positionen.stream().allMatch(KvPosition::imLager);
     }

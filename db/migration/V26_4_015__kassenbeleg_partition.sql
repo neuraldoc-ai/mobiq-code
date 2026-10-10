@@ -1,4 +1,3 @@
--- Kassenbelege nach Belegjahr partitionieren (MOB-4790)
 ALTER TABLE kassenbeleg RENAME TO kassenbeleg_alt;
 
 CREATE TABLE kassenbeleg (LIKE kassenbeleg_alt INCLUDING ALL) PARTITION BY RANGE (belegdatum);
