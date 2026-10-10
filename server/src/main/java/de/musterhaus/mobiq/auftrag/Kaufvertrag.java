@@ -20,7 +20,7 @@ public class Kaufvertrag {
     }
 
     public boolean istLieferbereit() {
-        return !liefersperre && positionen.stream().allMatch(KvPosition::imLager);
+        return !liefersperre && anzahlung.signum() > 0 && positionen.stream().allMatch(KvPosition::imLager);
     }
 
     public BigDecimal warenwert() {

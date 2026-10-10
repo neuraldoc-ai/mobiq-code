@@ -12,7 +12,7 @@ public class Tagesabschluss {
     }
 
     public Abschluss erstelle(String filiale, LocalDate tag) {
-        List<Kassenbeleg> liste = belege.findeTag(filiale, tag);
+        List<Kassenbeleg> liste = belege.findeTag(filiale, tag).stream().filter(b -> !b.storniert()).toList();
         if (liste.isEmpty()) {
             return Abschluss.leer(filiale, tag);
         }
