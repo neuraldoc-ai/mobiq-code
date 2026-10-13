@@ -15,7 +15,7 @@ LIEF_AVIS_STUNDEN:
   beschreibung: Avisierung an den Kunden vor der Lieferung
 ANZ_MIN_PROZ:
   typ: int
-  standard: 20
+  standard: 30
   min: 0
   max: 100
   einheit: Prozent
