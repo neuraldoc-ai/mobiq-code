@@ -1,7 +1,7 @@
 # Parameter Auftrag und Lieferung. Je Mandant unter Administration > Parameter überschreibbar.
 LIEF_VORLAUF_TAGE:
   typ: int
-  standard: 3
+  standard: 5
   min: 0
   max: 14
   einheit: Tage
