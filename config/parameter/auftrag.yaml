@@ -35,7 +35,7 @@ TEILLIEF_MAX_ANZAHL:
   typ: int
   standard: 3
   min: 2
-  max: 5
+  max: 8
   einheit: Teile
   beschreibung: Höchstzahl Lieferteile je Kaufvertrag
 TEILLIEF_MIN_WARENWERT_PROZ:
