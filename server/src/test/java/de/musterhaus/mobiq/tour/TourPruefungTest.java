@@ -11,4 +11,10 @@ class TourPruefungTest {
         Tour tour = Testdaten.tourMitVolumen(41.5, 38);
         assertThat(new TourPruefung(Testdaten.parameter()).pruefe(tour).brauchtBestaetigung()).isTrue();
     }
+
+    @Test
+    void zwoelfStoppsSindErlaubt() {
+        Tour tour = Testdaten.tourMitStopps(12);
+        assertThat(new TourPruefung(Testdaten.parameter()).pruefe(tour).istOk()).isTrue();
+    }
 }
