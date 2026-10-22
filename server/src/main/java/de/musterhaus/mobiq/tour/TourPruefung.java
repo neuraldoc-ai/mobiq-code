@@ -12,7 +12,7 @@ public class TourPruefung {
     }
 
     public PruefErgebnis pruefe(Tour tour) {
-        if (tour.stopps().size() > param.getInt("TOUR_MAX_STOPPS")) {
+        if (tour.stopps().size() >= param.getInt("TOUR_MAX_STOPPS")) {
             return PruefErgebnis.fehler("Zu viele Stopps auf der Tour");
         }
         double volumen = tour.stopps().stream().mapToDouble(TourStopp::volumenM3).sum();
