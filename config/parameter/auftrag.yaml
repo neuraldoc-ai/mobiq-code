@@ -45,3 +45,10 @@ TEILLIEF_MIN_WARENWERT_PROZ:
   max: 90
   einheit: Prozent
   beschreibung: Mindestanteil am Warenwert je Lieferteil
+MONT_ZEITFENSTER_STD:
+  typ: int
+  standard: 4
+  min: 2
+  max: 8
+  einheit: Stunden
+  beschreibung: Zeitfenster, das dem Kunden für die Montage genannt wird
