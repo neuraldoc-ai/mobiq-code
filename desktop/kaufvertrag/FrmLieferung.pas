@@ -14,6 +14,7 @@ type
     chkMontage: TCheckBox;
     chkTeillieferung: TCheckBox;
     btnAufteilen: TButton;
+    chkExpress: TCheckBox;
     procedure FormShow(Sender: TObject);
   private
     FKv: TKaufvertrag;
@@ -28,6 +29,8 @@ begin
   chkLiefersperre.Caption := Texte.Get(1203);
   chkLiefersperre.Checked := FKv.Liefersperre;
   chkMontage.Checked := FKv.HatMontage;
+  chkExpress.Caption := Texte.Get(1207);
+  chkExpress.Checked := FKv.Express;
 end;
 
 end.
