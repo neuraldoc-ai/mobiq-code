@@ -11,5 +11,5 @@ public record Buchungssatz(
         BigDecimal betragBrutto,
         short steuerschluessel,
         Short teillieferungNr,
-        BigDecimal azVerrechnet) {
+        BigDecimal anzahlungVerrechnet) {
 }
