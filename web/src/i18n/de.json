@@ -14,5 +14,6 @@
   "stamm.fahrzeug.kennzeichen": "Kennzeichen",
   "stamm.fahrzeug.ladevolumen": "Ladevolumen (m³)",
   "stamm.fahrzeug.zuladung": "Zuladung (kg)",
-  "stamm.fahrzeug.filiale": "Filiale"
+  "stamm.fahrzeug.filiale": "Filiale",
+  "stamm.fahrzeug.kuehlung": "Kühlfahrzeug"
 }

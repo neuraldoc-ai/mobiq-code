@@ -1,4 +1,4 @@
-import { Auswahl, Field, Zahl, Text } from '@mobiq/ui'
+import { Auswahl, Checkbox, Field, Zahl, Text } from '@mobiq/ui'
 import type { Fahrzeug } from '../api/types'
 import { t } from '../i18n'
 
@@ -14,6 +14,7 @@ export function FahrzeugMaske({ fz, onChange }: { fz: Fahrzeug; onChange: (fz: F
       <Field label={t('stamm.fahrzeug.zuladung')}>
         <Zahl value={fz.zuladungKg} onChange={(zuladungKg) => onChange({ ...fz, zuladungKg })} />
       </Field>
+      <Checkbox label={t('stamm.fahrzeug.kuehlung')} checked={fz.kuehlung} onChange={(kuehlung) => onChange({ ...fz, kuehlung })} />
       <Field label={t('stamm.fahrzeug.filiale')} required>
         <Auswahl value={fz.filiale} optionen={fz.filialen} onChange={(filiale) => onChange({ ...fz, filiale })} />
       </Field>

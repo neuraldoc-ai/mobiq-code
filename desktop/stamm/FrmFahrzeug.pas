@@ -11,6 +11,7 @@ type
     edtLadevolumen: TEdit;
     edtZuladung: TEdit;
     cbxFiliale: TComboBox;
+    chkKuehlung: TCheckBox;
   end;
 
 implementation
