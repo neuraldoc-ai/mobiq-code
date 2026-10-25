@@ -40,7 +40,7 @@ TEILLIEF_MAX_ANZAHL:
   beschreibung: Höchstzahl Lieferteile je Kaufvertrag
 TEILLIEF_MIN_WARENWERT_PROZ:
   typ: int
-  standard: 20
+  standard: 25
   min: 10
   max: 90
   einheit: Prozent
